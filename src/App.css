@@ -1,0 +1,2425 @@
+/* =========================================
+   GLOBAL STYLES
+========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f9f7;
+  color: #172033;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* =========================================
+   HOME PAGE
+========================================= */
+
+.home-page {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    #eefaff 0%,
+    #f5fcff 50%,
+    #e9f8e8 100%
+  );
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.home-navbar {
+  width: 100%;
+  height: 82px;
+
+  background: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 8%;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+
+/* Logo */
+
+.home-logo {
+  display: flex;
+  align-items: center;
+
+  font-size: 30px;
+  font-weight: 700;
+
+  color: #075f42;
+
+  white-space: nowrap;
+}
+
+
+/* Navigation */
+
+.home-nav-links {
+  display: flex;
+  align-items: center;
+
+  gap: 45px;
+}
+
+.home-nav-links a {
+  font-size: 18px;
+  font-weight: 500;
+
+  color: #26344d;
+
+  transition: 0.3s;
+}
+
+.home-nav-links a:hover {
+  color: #07834f;
+}
+
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.home-hero {
+  min-height: calc(100vh - 82px);
+
+  display: flex;
+
+  justify-content: center;
+  align-items: flex-start;
+
+  text-align: center;
+
+  padding-top: 70px;
+}
+
+
+/* Hero content */
+
+.hero-content {
+  width: 100%;
+  max-width: 1000px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Plant icon */
+
+.hero-icon {
+  font-size: 55px;
+
+  line-height: 1;
+
+  margin-bottom: 28px;
+}
+
+
+/* =========================================
+   MAIN HEADING
+========================================= */
+
+.hero-content h1 {
+  font-size: 72px;
+
+  font-weight: 700;
+
+  line-height: 1.15;
+
+  letter-spacing: -1px;
+
+  color: #111827;
+
+  margin: 0;
+
+  text-align: center;
+}
+
+
+/* Smart Village green text */
+
+.hero-content h1 span {
+  display: block;
+
+  color: #07834f;
+
+  margin-top: 8px;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.hero-content p {
+  font-size: 23px;
+
+  line-height: 1.6;
+
+  color: #526078;
+
+  margin-top: 30px;
+
+  margin-bottom: 40px;
+}
+
+
+/* =========================================
+   HERO BUTTONS
+========================================= */
+
+.hero-buttons {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 25px;
+}
+
+
+/* Primary button */
+
+.primary-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 280px;
+  height: 70px;
+
+  padding: 0 35px;
+
+  background: #07834f;
+
+  color: white;
+
+  border-radius: 35px;
+
+  font-size: 20px;
+  font-weight: 700;
+
+  transition: 0.3s;
+}
+
+.primary-button:hover {
+  background: #056b41;
+
+  transform: translateY(-2px);
+}
+
+
+/* Secondary button */
+
+.secondary-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 200px;
+  height: 70px;
+
+  padding: 0 35px;
+
+  background: white;
+
+  color: #07834f;
+
+  border: 2px solid #07834f;
+
+  border-radius: 35px;
+
+  font-size: 20px;
+  font-weight: 700;
+
+  transition: 0.3s;
+}
+
+.secondary-button:hover {
+  background: #07834f;
+
+  color: white;
+}
+
+
+/* =========================================
+   LOGIN / REGISTER
+========================================= */
+
+.login-page {
+  min-height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 20px;
+
+  background: linear-gradient(
+    135deg,
+    #e8f8f0,
+    #eef8ff
+  );
+}
+
+.login-card {
+  width: 450px;
+  max-width: 100%;
+
+  background: white;
+
+  padding: 40px;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.login-card h1 {
+  text-align: center;
+
+  color: #07834f;
+
+  margin-bottom: 10px;
+}
+
+.login-card h2 {
+  text-align: center;
+
+  margin-bottom: 10px;
+}
+
+.login-card > p {
+  text-align: center;
+
+  color: #666;
+
+  margin-bottom: 25px;
+}
+
+.login-card form {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.login-card label {
+  font-weight: 600;
+
+  margin-bottom: 7px;
+}
+
+.login-card input {
+  width: 100%;
+
+  padding: 13px;
+
+  margin-bottom: 18px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+}
+
+.login-card input:focus {
+  outline: none;
+
+  border-color: #07834f;
+}
+
+.login-card form button {
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #07834f;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.login-card form button:hover {
+  background: #056b41;
+}
+
+.register-text {
+  margin-top: 20px;
+}
+
+.register-text span {
+  margin-left: 5px;
+
+  color: #07834f;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+/* =========================================
+   SERVICES PAGE
+========================================= */
+
+.services-page {
+  min-height: 100vh;
+
+  padding: 50px 7%;
+
+  background: linear-gradient(
+    135deg,
+    #effaf4,
+    #eef8ff
+  );
+}
+
+.services-header {
+  text-align: center;
+
+  margin-bottom: 40px;
+}
+
+.services-header h1 {
+  font-size: 42px;
+
+  color: #07834f;
+
+  margin-bottom: 10px;
+}
+
+.services-header p {
+  color: #666;
+
+  font-size: 18px;
+
+  margin-bottom: 25px;
+}
+
+.services-header input {
+  width: 500px;
+  max-width: 90%;
+
+  padding: 15px 20px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 30px;
+
+  font-size: 16px;
+}
+
+.service-list {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 25px;
+}
+
+.service-item {
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.service-item h2 {
+  color: #07834f;
+
+  margin-bottom: 15px;
+}
+
+.service-item p {
+  margin-bottom: 10px;
+
+  color: #555;
+}
+
+.service-item-icon {
+  font-size: 40px;
+
+  margin-bottom: 10px;
+}
+
+
+/* =========================================
+   DASHBOARD
+========================================= */
+
+.dashboard-page {
+  min-height: 100vh;
+
+  background: #f5faf7;
+}
+
+.dashboard-navbar {
+  height: 70px;
+
+  background: white;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 0 7%;
+
+  box-shadow:
+    0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-logo {
+  font-size: 24px;
+
+  font-weight: 700;
+
+  color: #07834f;
+}
+
+.dashboard-nav-buttons {
+  display: flex;
+
+  gap: 12px;
+}
+
+.dashboard-nav-buttons button {
+  padding: 9px 18px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background: #07834f;
+
+  color: white;
+
+  cursor: pointer;
+}
+
+.dashboard-welcome {
+  text-align: center;
+
+  padding: 50px 20px 30px;
+}
+
+.dashboard-welcome h1 {
+  font-size: 38px;
+
+  color: #07834f;
+
+  margin-bottom: 10px;
+}
+
+.dashboard-welcome p {
+  color: #666;
+
+  font-size: 18px;
+}
+
+.user-info-card {
+  width: 80%;
+  max-width: 700px;
+
+  margin: 20px auto;
+
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.user-info-card h2 {
+  color: #07834f;
+
+  margin-bottom: 20px;
+}
+
+.user-info p {
+  margin-bottom: 10px;
+}
+
+.dashboard-actions {
+  width: 85%;
+
+  max-width: 1100px;
+
+  margin: 40px auto;
+}
+
+.dashboard-actions h2 {
+  text-align: center;
+
+  color: #07834f;
+
+  margin-bottom: 25px;
+}
+
+.dashboard-card-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(230px, 1fr));
+
+  gap: 25px;
+}
+
+.dashboard-card {
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 15px;
+
+  text-align: center;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard-card-icon {
+  font-size: 45px;
+
+  margin-bottom: 15px;
+}
+
+.dashboard-card h3 {
+  color: #07834f;
+
+  margin-bottom: 10px;
+}
+
+.dashboard-card p {
+  color: #666;
+
+  line-height: 1.5;
+
+  margin-bottom: 20px;
+}
+
+.dashboard-card button {
+  padding: 11px 20px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background: #07834f;
+
+  color: white;
+
+  cursor: pointer;
+}
+
+.dashboard-footer {
+  text-align: center;
+
+  padding: 30px;
+
+  color: #777;
+}
+
+
+/* =========================================
+   COMPLAINT PAGE
+========================================= */
+
+.complaint-page,
+.complaints-page {
+  min-height: 100vh;
+
+  background: linear-gradient(
+    135deg,
+    #eaf8f0,
+    #eef8ff
+  );
+}
+
+.complaint-container {
+  min-height: calc(100vh - 70px);
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 50px 20px;
+}
+
+.complaint-card {
+  width: 600px;
+  max-width: 100%;
+
+  background: white;
+
+  padding: 40px;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.complaint-card h1 {
+  color: #07834f;
+
+  margin-bottom: 10px;
+}
+
+.complaint-card > p {
+  color: #666;
+
+  margin-bottom: 25px;
+}
+
+.complaint-card form {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.complaint-card label {
+  font-weight: 600;
+
+  margin-bottom: 8px;
+}
+
+.complaint-card textarea {
+  min-height: 160px;
+
+  padding: 14px;
+
+  resize: vertical;
+
+  border: 1px solid #ccc;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+
+  margin-bottom: 20px;
+}
+
+.complaint-card form button {
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #07834f;
+
+  color: white;
+
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+.back-dashboard-btn {
+  margin-top: 15px;
+
+  padding: 11px 18px;
+
+  border: 1px solid #07834f;
+
+  border-radius: 7px;
+
+  background: white;
+
+  color: #07834f;
+
+  cursor: pointer;
+}
+
+
+/* =========================================
+   MY COMPLAINTS
+========================================= */
+
+.complaints-header {
+  text-align: center;
+
+  padding: 50px 20px 25px;
+}
+
+.complaints-header h1 {
+  color: #07834f;
+
+  margin-bottom: 10px;
+}
+
+.complaints-header p {
+  color: #666;
+}
+
+.complaints-list {
+  width: 85%;
+
+  max-width: 900px;
+
+  margin: 20px auto 60px;
+}
+
+.complaint-item,
+.no-complaints {
+  background: white;
+
+  padding: 25px;
+
+  margin-bottom: 20px;
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.complaint-number {
+  color: #07834f;
+
+  font-weight: 700;
+
+  margin-bottom: 15px;
+}
+
+.status-pending {
+  background: #fff3cd;
+
+  color: #856404;
+
+  padding: 5px 10px;
+
+  border-radius: 15px;
+}
+
+.status-resolved {
+  background: #d4edda;
+
+  color: #155724;
+
+  padding: 5px 10px;
+
+  border-radius: 15px;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .home-navbar {
+    height: auto;
+
+    padding: 20px;
+
+    flex-direction: column;
+
+    gap: 20px;
+  }
+
+  .home-nav-links {
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+
+  .home-logo {
+    font-size: 26px;
+  }
+
+  .home-hero {
+    padding: 60px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 48px;
+
+    line-height: 1.15;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .primary-button,
+  .secondary-button {
+    width: 280px;
+  }
+
+  .dashboard-navbar {
+    height: auto;
+
+    padding: 15px 20px;
+
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .dashboard-nav-buttons {
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+
+}
+/* =========================
+   ADMIN USERS
+========================= */
+
+.admin-users-page {
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #e8f8ef,
+    #eef7ff
+  );
+}
+
+.admin-users-header {
+  text-align: center;
+  padding: 50px 20px 30px;
+}
+
+.admin-users-header h1 {
+  font-size: 42px;
+  color: #087443;
+  margin-bottom: 10px;
+}
+
+.admin-users-header p {
+  font-size: 18px;
+  color: #555;
+}
+
+.admin-users-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 20px auto 60px;
+}
+
+.users-table-wrapper {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.users-table th {
+  background: #087443;
+  color: white;
+  padding: 15px;
+  text-align: left;
+}
+
+.users-table td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.users-table tr:hover {
+  background: #f4fbf7;
+}
+
+.admin-role {
+  background: #d8f3dc;
+  color: #087443;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.user-role {
+  background: #e3f2fd;
+  color: #1565c0;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.delete-user-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.delete-user-btn:hover {
+  background: #b02a37;
+}
+
+.no-users {
+  background: white;
+  padding: 40px;
+  text-align: center;
+  border-radius: 15px;
+}
+/* =========================================
+   AI CHATBOT
+========================================= */
+
+.ai-chatbot-page {
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #e6f7ed,
+    #e9f3ff
+  );
+}
+
+
+/* CHAT CONTAINER */
+
+.chatbot-container {
+  width: 90%;
+  max-width: 900px;
+  height: 650px;
+  margin: 40px auto;
+
+  background: white;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 10px 35px rgba(0, 0, 0, 0.12);
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+}
+
+
+/* HEADER */
+
+.chatbot-header {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 20px 25px;
+
+  background: #168a5b;
+
+  color: white;
+}
+
+.chatbot-icon {
+  font-size: 40px;
+}
+
+.chatbot-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.chatbot-header p {
+  margin: 5px 0 0;
+  font-size: 15px;
+}
+
+
+/* MESSAGES AREA */
+
+.chatbot-messages {
+  flex: 1;
+
+  padding: 25px;
+
+  overflow-y: auto;
+
+  background: #f8faf9;
+}
+
+
+/* WELCOME */
+
+.chatbot-welcome {
+  text-align: center;
+
+  padding: 70px 20px;
+
+  color: #555;
+}
+
+.welcome-icon {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.chatbot-welcome h2 {
+  color: #168a5b;
+}
+
+
+/* CHAT MESSAGE */
+
+.chat-message {
+  display: flex;
+
+  gap: 12px;
+
+  margin-bottom: 20px;
+
+  align-items: flex-start;
+}
+
+
+/* USER MESSAGE */
+
+.user-message {
+  justify-content: flex-end;
+}
+
+.user-message .message-icon {
+  order: 2;
+}
+
+
+/* MESSAGE ICON */
+
+.message-icon {
+  font-size: 25px;
+
+  min-width: 30px;
+
+  text-align: center;
+}
+
+
+/* MESSAGE TEXT */
+
+.message-text {
+  max-width: 70%;
+
+  padding: 14px 17px;
+
+  border-radius: 15px;
+
+  line-height: 1.6;
+
+  white-space: pre-line;
+
+  font-size: 15px;
+}
+
+
+/* USER */
+
+.user-message .message-text {
+  background: #168a5b;
+
+  color: white;
+
+  border-bottom-right-radius: 3px;
+}
+
+
+/* AI */
+
+.ai-message .message-text {
+  background: white;
+
+  color: #333;
+
+  border: 1px solid #e1e5e2;
+
+  border-bottom-left-radius: 3px;
+
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+
+/* INPUT AREA */
+
+.chatbot-input-area {
+  display: flex;
+
+  gap: 10px;
+
+  padding: 18px 20px;
+
+  border-top: 1px solid #ddd;
+
+  background: white;
+}
+
+.chatbot-input-area input {
+  flex: 1;
+
+  padding: 14px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 10px;
+
+  font-size: 15px;
+
+  outline: none;
+}
+
+.chatbot-input-area input:focus {
+  border-color: #168a5b;
+}
+
+
+.chatbot-input-area button {
+  padding: 12px 25px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #168a5b;
+
+  color: white;
+
+  cursor: pointer;
+
+  font-size: 15px;
+}
+
+.chatbot-input-area button:hover {
+  background: #0e7049;
+}
+
+.chatbot-input-area button:disabled {
+  background: #aaa;
+
+  cursor: not-allowed;
+}
+
+
+/* QUICK QUESTIONS */
+
+.chatbot-examples {
+  padding: 15px 20px 20px;
+
+  border-top: 1px solid #eee;
+
+  background: white;
+}
+
+.chatbot-examples p {
+  margin: 0 0 10px;
+
+  font-weight: bold;
+
+  color: #444;
+}
+
+.chatbot-examples button {
+  margin-right: 8px;
+
+  margin-bottom: 5px;
+
+  padding: 8px 13px;
+
+  border: 1px solid #168a5b;
+
+  background: white;
+
+  color: #168a5b;
+
+  border-radius: 20px;
+
+  cursor: pointer;
+}
+
+.chatbot-examples button:hover {
+  background: #168a5b;
+
+  color: white;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .chatbot-container {
+    width: 95%;
+    height: 600px;
+    margin: 20px auto;
+  }
+
+  .chatbot-header h1 {
+    font-size: 22px;
+  }
+
+  .message-text {
+    max-width: 80%;
+  }
+
+  .chatbot-examples button {
+    font-size: 12px;
+  }
+
+}
+/* ==========================================
+   AI COMPLAINT ANALYSIS BUTTON
+   ========================================== */
+
+.ai-analysis-btn {
+  width: 100%;
+  margin-top: 15px;
+  padding: 13px 16px;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: #1976d2;
+  color: white;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+
+.ai-analysis-btn:hover {
+  background-color: #1565c0;
+}
+
+
+.ai-analysis-btn:disabled {
+  background-color: #90caf9;
+  cursor: not-allowed;
+}
+
+
+/* ==========================================
+   AI RESULT BOX
+   ========================================== */
+
+.ai-result-box {
+
+  margin-top: 20px;
+
+  padding: 20px;
+
+  border-radius: 10px;
+
+  background-color: #eef7ff;
+
+  border: 1px solid #90caf9;
+
+  box-shadow:
+    0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+
+.ai-result-box h2 {
+
+  margin-top: 0;
+
+  margin-bottom: 15px;
+
+  color: #1565c0;
+
+  font-size: 21px;
+}
+
+
+.ai-result-box p {
+
+  margin: 10px 0;
+
+  line-height: 1.6;
+
+  color: #333;
+}
+
+
+.ai-result-box strong {
+
+  color: #1565c0;
+}
+/* ==========================================
+   ADMIN COMPLAINTS
+   ========================================== */
+
+.admin-page {
+  min-height: 100vh;
+  background: #f4f7f5;
+}
+
+
+/* ==========================================
+   ADMIN NAVBAR
+   ========================================== */
+
+.admin-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px 30px;
+
+  background: #1b5e20;
+  color: white;
+}
+
+
+.admin-logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+
+.admin-nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+
+.admin-nav-buttons button {
+  border: none;
+  padding: 9px 14px;
+
+  border-radius: 6px;
+
+  background: white;
+  color: #1b5e20;
+
+  cursor: pointer;
+
+  font-weight: 600;
+}
+
+
+.admin-nav-buttons button:hover {
+  background: #e8f5e9;
+}
+
+
+/* ==========================================
+   CONTENT
+   ========================================== */
+
+.admin-content {
+  max-width: 1100px;
+
+  margin: auto;
+
+  padding: 35px 20px;
+}
+
+
+.admin-content h1 {
+  color: #1b5e20;
+}
+
+
+.admin-description {
+  color: #666;
+
+  margin-bottom: 25px;
+}
+
+
+/* ==========================================
+   LOADING
+   ========================================== */
+
+.admin-loading {
+  text-align: center;
+
+  padding: 50px;
+
+  font-size: 18px;
+}
+
+
+/* ==========================================
+   NO COMPLAINTS
+   ========================================== */
+
+.no-complaints {
+  background: white;
+
+  padding: 40px;
+
+  text-align: center;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 3px 12px rgba(0,0,0,0.08);
+}
+
+
+/* ==========================================
+   COMPLAINT CARD
+   ========================================== */
+
+.admin-complaint-card {
+  background: white;
+
+  margin-bottom: 25px;
+
+  padding: 25px;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 3px 12px rgba(0,0,0,0.08);
+}
+
+
+/* ==========================================
+   HEADER
+   ========================================== */
+
+.complaint-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  border-bottom: 1px solid #eee;
+
+  padding-bottom: 15px;
+
+  margin-bottom: 20px;
+}
+
+
+.complaint-header h2 {
+  margin: 0;
+
+  color: #333;
+}
+
+
+.complaint-header p {
+  color: #777;
+
+  margin-bottom: 0;
+}
+
+
+/* ==========================================
+   STATUS
+   ========================================== */
+
+.status-pending,
+.status-resolved {
+  padding: 7px 14px;
+
+  border-radius: 20px;
+
+  font-weight: bold;
+
+  font-size: 13px;
+}
+
+
+.status-pending {
+  background: #fff3cd;
+
+  color: #856404;
+}
+
+
+.status-resolved {
+  background: #d4edda;
+
+  color: #155724;
+}
+
+
+/* ==========================================
+   COMPLAINT SECTION
+   ========================================== */
+
+.complaint-section {
+  margin-bottom: 20px;
+}
+
+
+.complaint-section h3 {
+  color: #333;
+}
+
+
+.complaint-section p {
+  background: #f8f9fa;
+
+  padding: 15px;
+
+  border-radius: 8px;
+
+  line-height: 1.6;
+}
+
+
+/* ==========================================
+   AI INFORMATION
+   ========================================== */
+
+.ai-complaint-info {
+
+  background: #eef7ff;
+
+  border: 1px solid #90caf9;
+
+  border-radius: 10px;
+
+  padding: 20px;
+
+  margin-top: 20px;
+}
+
+
+.ai-complaint-info h3 {
+
+  color: #1565c0;
+
+  margin-top: 0;
+
+  margin-bottom: 18px;
+}
+
+
+/* ==========================================
+   AI GRID
+   ========================================== */
+
+.ai-info-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 15px;
+}
+
+
+.ai-info-item {
+
+  background: white;
+
+  padding: 15px;
+
+  border-radius: 8px;
+
+  border: 1px solid #ddd;
+}
+
+
+.ai-info-item span {
+
+  display: block;
+
+  color: #777;
+
+  font-size: 14px;
+
+  margin-bottom: 8px;
+}
+
+
+.ai-info-item strong {
+
+  font-size: 17px;
+}
+
+
+/* ==========================================
+   PRIORITY
+   ========================================== */
+
+.priority-high {
+  color: #d32f2f;
+}
+
+
+.priority-medium {
+  color: #f57c00;
+}
+
+
+.priority-low {
+  color: #388e3c;
+}
+
+
+/* ==========================================
+   AI EXPLANATION
+   ========================================== */
+
+.ai-explanation {
+
+  margin-top: 15px;
+
+  background: white;
+
+  padding: 15px;
+
+  border-radius: 8px;
+}
+
+
+.ai-explanation p {
+
+  margin-bottom: 0;
+
+  line-height: 1.6;
+
+  color: #555;
+}
+
+
+/* ==========================================
+   DATE
+   ========================================== */
+
+.complaint-date {
+
+  margin-top: 20px;
+
+  color: #777;
+
+  font-size: 14px;
+}
+
+
+/* ==========================================
+   ACTIONS
+   ========================================== */
+
+.complaint-actions {
+
+  margin-top: 20px;
+
+  display: flex;
+
+  justify-content: flex-end;
+}
+
+
+.resolve-btn,
+.pending-btn {
+
+  border: none;
+
+  padding: 11px 18px;
+
+  border-radius: 7px;
+
+  color: white;
+
+  cursor: pointer;
+
+  font-weight: 600;
+}
+
+
+.resolve-btn {
+  background: #2e7d32;
+}
+
+
+.resolve-btn:hover {
+  background: #1b5e20;
+}
+
+
+.pending-btn {
+  background: #f57c00;
+}
+
+
+.pending-btn:hover {
+  background: #ef6c00;
+}
+
+
+/* ==========================================
+   MOBILE
+   ========================================== */
+
+@media (max-width: 700px) {
+
+  .admin-navbar {
+
+    flex-direction: column;
+
+    gap: 15px;
+
+  }
+
+
+  .admin-nav-buttons {
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+  }
+
+
+  .ai-info-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+
+  .complaint-header {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+  }
+
+}
+/* ==========================================
+   SMART SERVICE RECOMMENDATIONS
+   ========================================== */
+
+.recommendation-section {
+
+  background: white;
+
+  margin-top: 30px;
+
+  padding: 25px;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+.recommendation-section h2 {
+
+  color: #1b5e20;
+
+  margin-top: 0;
+}
+
+
+.recommendation-section > p {
+
+  color: #666;
+
+  margin-bottom: 20px;
+}
+
+
+/* ==========================================
+   SEARCH
+   ========================================== */
+
+.recommendation-search {
+
+  display: flex;
+
+  gap: 10px;
+}
+
+
+.recommendation-search input {
+
+  flex: 1;
+
+  padding: 13px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 8px;
+
+  font-size: 16px;
+
+  outline: none;
+}
+
+
+.recommendation-search input:focus {
+
+  border-color: #2e7d32;
+}
+
+
+.recommendation-search button {
+
+  padding: 13px 20px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #2e7d32;
+
+  color: white;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+.recommendation-search button:hover {
+
+  background: #1b5e20;
+}
+
+
+.recommendation-search button:disabled {
+
+  background: #999;
+
+  cursor: not-allowed;
+}
+
+
+/* ==========================================
+   RESULTS
+   ========================================== */
+
+.recommendation-results {
+
+  margin-top: 25px;
+}
+
+
+.recommendation-results > h3 {
+
+  color: #333;
+
+  margin-bottom: 15px;
+}
+
+
+.recommendation-card {
+
+  padding: 18px;
+
+  margin-bottom: 15px;
+
+  background: #f4faf5;
+
+  border: 1px solid #c8e6c9;
+
+  border-radius: 10px;
+}
+
+
+.recommendation-card h3 {
+
+  color: #1b5e20;
+
+  margin-top: 0;
+
+  margin-bottom: 12px;
+}
+
+
+.recommendation-card p {
+
+  margin: 8px 0;
+
+  color: #555;
+}
+
+
+/* ==========================================
+   NO RESULTS
+   ========================================== */
+
+.no-recommendation {
+
+  margin-top: 20px;
+
+  padding: 15px;
+
+  background: #fff8e1;
+
+  border-radius: 8px;
+
+  color: #795548;
+}
+
+
+/* ==========================================
+   MOBILE
+   ========================================== */
+
+@media (max-width: 700px) {
+
+  .recommendation-search {
+
+    flex-direction: column;
+
+  }
+
+  .recommendation-search button {
+
+    width: 100%;
+
+  }
+
+}
+/* ==========================================
+   MY COMPLAINTS
+========================================== */
+
+.complaints-page {
+  min-height: 100vh;
+  background: #f5f7f6;
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.complaints-header {
+  text-align: center;
+  padding: 35px 20px 20px;
+}
+
+.complaints-header h1 {
+  color: #1b5e20;
+  margin-bottom: 10px;
+}
+
+.complaints-header p {
+  color: #666;
+}
+
+
+/* ==========================================
+   COMPLAINT LIST
+========================================== */
+
+.complaints-list {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+/* ==========================================
+   COMPLAINT CARD
+========================================== */
+
+.complaint-item {
+  background: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ==========================================
+   COMPLAINT HEADER
+========================================== */
+
+.complaint-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+
+
+.complaint-number {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+}
+
+
+/* ==========================================
+   STATUS
+========================================== */
+
+.complaint-status {
+  padding: 7px 14px;
+  border-radius: 20px;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+
+.status-pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+
+.status-progress {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+
+.status-resolved {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+
+/* ==========================================
+   COMPLAINT TEXT
+========================================== */
+
+.complaint-text-section {
+  background: #f8f9fa;
+
+  padding: 18px;
+
+  border-radius: 10px;
+
+  margin-bottom: 20px;
+}
+
+
+.complaint-text-section h3 {
+  margin-top: 0;
+
+  color: #333;
+}
+
+
+.complaint-text-section p {
+  color: #555;
+
+  line-height: 1.6;
+
+  margin-bottom: 0;
+}
+
+
+/* ==========================================
+   AI ANALYSIS
+========================================== */
+
+.complaint-ai-section {
+  background: #eef7ff;
+
+  border: 1px solid #bbdefb;
+
+  padding: 20px;
+
+  border-radius: 10px;
+
+  margin-bottom: 20px;
+}
+
+
+.complaint-ai-section h3 {
+  margin-top: 0;
+
+  color: #1565c0;
+}
+
+
+/* ==========================================
+   AI DETAILS
+========================================== */
+
+.ai-details {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 20px;
+}
+
+
+.ai-detail-box {
+  background: white;
+
+  padding: 15px;
+
+  border-radius: 8px;
+}
+
+
+.ai-detail-box strong {
+  color: #333;
+}
+
+
+.ai-detail-box p {
+  margin-bottom: 0;
+
+  margin-top: 8px;
+
+  color: #555;
+}
+
+
+/* ==========================================
+   PRIORITY
+========================================== */
+
+.priority-high {
+  color: #d32f2f !important;
+
+  font-weight: 700;
+}
+
+
+.priority-medium {
+  color: #f57c00 !important;
+
+  font-weight: 700;
+}
+
+
+.priority-low {
+  color: #388e3c !important;
+
+  font-weight: 700;
+}
+
+
+/* ==========================================
+   AI EXPLANATION
+========================================== */
+
+.ai-explanation {
+  margin-top: 18px;
+
+  background: white;
+
+  padding: 15px;
+
+  border-radius: 8px;
+}
+
+
+.ai-explanation strong {
+  color: #333;
+}
+
+
+.ai-explanation p {
+  color: #555;
+
+  line-height: 1.6;
+
+  margin-bottom: 0;
+}
+
+
+/* ==========================================
+   CREATED DATE
+========================================== */
+
+.complaint-created {
+  color: #777;
+
+  font-size: 14px;
+}
+
+
+/* ==========================================
+   NO COMPLAINTS
+========================================== */
+
+.no-complaints {
+  background: white;
+
+  text-align: center;
+
+  padding: 50px 30px;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+.no-complaints-icon {
+  font-size: 50px;
+
+  margin-bottom: 15px;
+}
+
+
+.no-complaints h2 {
+  color: #333;
+}
+
+
+.no-complaints p {
+  color: #666;
+}
+
+
+.no-complaints button {
+  margin-top: 15px;
+
+  padding: 12px 20px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #2e7d32;
+
+  color: white;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+/* ==========================================
+   LOADING
+========================================== */
+
+.complaints-loading {
+  background: white;
+
+  padding: 40px;
+
+  text-align: center;
+
+  border-radius: 12px;
+}
+
+
+/* ==========================================
+   BOTTOM BUTTON
+========================================== */
+
+.complaints-bottom {
+  text-align: center;
+
+  padding: 10px 20px 40px;
+}
+
+
+.complaints-bottom button {
+  padding: 12px 20px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #555;
+
+  color: white;
+
+  cursor: pointer;
+}
+
+
+.complaints-bottom button:hover {
+  background: #333;
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 700px) {
+
+  .complaints-list {
+    padding: 15px;
+  }
+
+
+  .complaint-item {
+    padding: 18px;
+  }
+
+
+  .complaint-item-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 12px;
+  }
+
+
+  .ai-details {
+    grid-template-columns: 1fr;
+  }
+
+}
